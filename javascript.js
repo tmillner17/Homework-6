@@ -9,12 +9,12 @@ $.ajax({
 
 function renderButtons(){
     for (let i = 0; i < mySports.length; i++){      
-        let sportButtons = $("<button>");
-        sportButtons.addClass("sport");
-        sportButtons.attr("data-name", mySports[i]);
-        sportButtons.text(mySports[i]);
-        $("#sport").append(sportButtons);
+        let a = $("<button>");
+        a.addClass("sport");
+        a.attr("data-name", mySports[i]);
+        a.text(mySports[i]);
+        $("#sport").append(a);
+        console.log($("#sport"))
     }
 }
 renderButtons()
-$("add-gifs")
